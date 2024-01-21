@@ -19,7 +19,7 @@ public class StringExecutorImplTests {
                 {"", Optional.empty()},
                 {"aaaacccbb", Optional.of("a4c3b2")},
                 {"aaaacccccccccbber", Optional.of("c9a4b2e1r1")},
-                {"bbbbbbbbbbbfffffffffeeeeeeeerrrrrrrrrrrrrrrrrrrrrryujkbfd", Optional.of("f9e8r22b11y1u1j1k1b1f1d1")},
+                {"bbbbbbbbbbbfffffffffeeeeeeeerrrrrrrrrrrrrrrrrrrrrryujkbfd", Optional.of("r22b11f9e8y1u1j1k1b1f1d1")},
                 {"abgv", Optional.of("a1b1g1v1")}
         };
     }
