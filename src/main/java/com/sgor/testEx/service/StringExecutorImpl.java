@@ -34,10 +34,8 @@ public class StringExecutorImpl implements StringExecutor {
 
         list.add(Character.toString(currentChar) + count);
 
-        list.stream().sorted((x1, x2) -> {
-            return Integer.compare(Integer.parseInt(x2.substring(1, x2.length())),
-                    Integer.parseInt(x1.substring(1, x1.length())));
-        }).forEach(stringBuilder::append);
+        list.stream().sorted((x1, x2) -> Integer.compare(Integer.parseInt(x2.substring(1)),
+                Integer.parseInt(x1.substring(1)))).forEach(stringBuilder::append);
 
         return Optional.of(stringBuilder.toString());
     }
